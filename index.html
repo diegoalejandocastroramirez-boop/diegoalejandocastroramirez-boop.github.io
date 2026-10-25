@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffdeec">
+<title>🎓 Felicidades Fátima</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 12px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-align: center;
+    color: #713b91;
+    background: linear-gradient(135deg, #ffd6e8, #e6d9ff, #d6f4ff);
+    overflow-x: hidden;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 650px;
+    margin: 15px auto;
+    padding: clamp(18px, 5vw, 35px);
+    background: rgba(255,255,255,0.95);
+    border: 3px solid white;
+    border-radius: 28px;
+    box-shadow: 0 10px 35px #a45bdf44;
+    position: relative;
+    z-index: 1;
+}
+
+.corona {
+    font-size: 48px;
+    animation: flotar 2s infinite ease-in-out;
+}
+
+h1 {
+    color: #ed368d;
+    font-size: clamp(2rem, 8vw, 3.8rem);
+    margin: 12px 0;
+    text-shadow: 2px 3px #ffd1e7;
+}
+
+.subtitulo {
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    color: #8546b6;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.imagen {
+    display: block;
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    margin: 22px auto;
+    border: 4px solid #ffb5d6;
+    border-radius: 22px;
+    box-shadow: 0 7px 22px #d88ab544;
+}
+
+.mensaje {
+    background: linear-gradient(135deg, #fff0f8, #f0eaff);
+    padding: 22px 15px;
+    margin: 20px 0;
+    border-radius: 20px;
+    line-height: 1.8;
+}
+
+.mensaje h2 {
+    color: #eb368e;
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+    margin-bottom: 12px;
+}
+
+.mensaje p {
+    margin: 10px 0;
+    font-size: clamp(1rem, 3.5vw, 1.1rem);
+}
+
+.destacado {
+    color: #853ab6;
+    font-weight: bold;
+    font-size: 1.1rem !important;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.boton {
+    min-height: 50px;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #ff4396, #a15bdf);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 14px #a15bdf44;
+    touch-action: manipulation;
+}
+
+.boton:hover {
+    transform: scale(1.04);
+}
+
+#sorpresa {
+    display: none;
+    background: #fff0b8;
+    color: #7540a1;
+    padding: 20px 14px;
+    margin-top: 20px;
+    border-radius: 18px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+#sorpresa.visible {
+    display: block;
+    animation: aparecer 0.6s ease;
+}
+
+.firma {
+    margin-top: 22px;
+    color: #8a65a3;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.decoracion {
+    position: fixed;
+    top: -40px;
+    z-index: 10;
+    pointer-events: none;
+    animation: caer linear forwards;
+}
+
+@keyframes flotar {
+    0%, 100% { transform: translateY(0) rotate(-5deg); }
+    50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+@keyframes caer {
+    to {
+        transform: translateY(110vh) rotate(600deg);
+        opacity: 0;
+    }
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Adaptación para teléfonos */
+@media (max-width: 480px) {
+    body {
+        padding: 6px;
+    }
+
+    .contenedor {
+        margin: 8px auto;
+        padding: 20px 13px;
+        border-radius: 22px;
+    }
+
+    .imagen {
+        border-width: 3px;
+        border-radius: 16px;
+        margin: 18px auto;
+    }
+
+    .botones {
+        flex-direction: column;
+    }
+
+    .boton {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<main class="contenedor">
+
+    <div class="corona">👑🎓🌟</div>
+
+    <h1>¡Felicidades, Fátima!</h1>
+
+    <p class="subtitulo">
+        💖 ¡Lo lograste, pequeña graduada! 💖
+    </p>
+
+    <img
+        src="soco.jpeg"
+        alt="Graduación de Fátima"
+        class="imagen"
+    >
+
+    <section class="mensaje">
+
+        <h2>🎓 ¡Felicidades por tu graduación! 🎓</h2>
+
+        <p>
+            Estamos muy orgullosos de ti y de este hermoso logro.
+        </p>
+
+        <p class="destacado">
+            🎒 ¡Bienvenida a Primero Primaria! 📚
+        </p>
+
+        <p>
+            🌟 ¡Sigue aprendiendo, soñando y brillando, Fátima! 🌟
+        </p>
+
+    </section>
+
+    <div class="botones">
+
+        <button class="boton" onclick="mostrarSorpresa()">
+            🎁 Una sorpresa para ti
+        </button>
+
+        <button class="boton" onclick="lluviaDeAmor()">
+            🎉 ¡Celebrar!
+        </button>
+
+    </div>
+
+    <div id="sorpresa">
+        💖 ¡Felicidades, Fátima! 💖
+        <br>
+        ¡Que Dios bendiga esta nueva etapa!
+        <br>
+        🎓🌸 ¡Te queremos mucho! 🌸🎓
+    </div>
+
+    <p class="firma">
+        Con mucho cariño de tu Abuela, y tios. 💗
+    </p>
+
+</main>
+
+<script>
+function mostrarSorpresa() {
+    document.getElementById("sorpresa").classList.add("visible");
+    lluviaDeAmor();
+}
+
+function lluviaDeAmor() {
+    const emojis = ["💖", "💕", "⭐", "🌸", "🎉", "🎓", "🦋", "✨"];
+
+    for (let i = 0; i < 45; i++) {
+        const elemento = document.createElement("div");
+
+        elemento.className = "decoracion";
+        elemento.textContent = emojis[
+            Math.floor(Math.random() * emojis.length)
+        ];
+
+        elemento.style.left = Math.random() * 100 + "vw";
+        elemento.style.fontSize = (Math.random() * 16 + 16) + "px";
+        elemento.style.animationDuration = (Math.random() * 2 + 3) + "s";
+        elemento.style.animationDelay = Math.random() + "s";
+
+        document.body.appendChild(elemento);
+
+        setTimeout(() => elemento.remove(), 6000);
+    }
+}
+
+window.addEventListener("load", lluviaDeAmor);
+</script>
+
+</body>
+</html>
